@@ -17,10 +17,6 @@ const StudentSchema = new mongoose.Schema({
   type:String,
   required:true
  },
- Age:{
-  type:Number,
-  required:true
- },
  ID:{
   type:Number,
   required:true
