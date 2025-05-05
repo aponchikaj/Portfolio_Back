@@ -11,7 +11,7 @@ const students = require('./models/students.model')
 
 const app=express()
 const port=process.env.PORT||3000
-app.use(cors({origin:'http://localhost:4200',credentials:true}))
+app.use(cors({origin:['http://localhost:4200','https://lazare-mirziashvili.vercel.app'],credentials:true}))
 app.use(bparser.json())
 
 //Nodemailer Config to send mails.
